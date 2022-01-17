@@ -55,9 +55,11 @@ public class Country {
         this.continent = continent;
         this.code = code;
         this.capital = capital;
+        this.cities = new City[]{capital};
     }
 
     public Country() {
+        this.cities = new City[0];
     }
 
     @Override
@@ -83,7 +85,7 @@ public class Country {
             return 0;
         }
 
-        for (int i = 0; i <= cities.length; i++) {
+        for (int i = 0; i < cities.length; i++) {
             inhabitants += cities[i].getInhabitants();
         }
 
