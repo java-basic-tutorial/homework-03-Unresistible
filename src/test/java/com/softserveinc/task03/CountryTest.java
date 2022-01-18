@@ -55,7 +55,7 @@ public class CountryTest {
 
     @Order(3)
     @ParameterizedTest(name = "{1}")
-    @DisplayName("Проверка сеттеров")
+    @DisplayName("Проверка cеттеров")
     @CsvSource({"java.lang.String,setName", "java.lang.String,setContinent", "java.lang.String,setCode",
             "com.softserveinc.task02.City,setCapital", "com.softserveinc.task02.City,addCity"})
     void publicSetterExists(Class<?> clazz, String setterName) throws NoSuchMethodException {
